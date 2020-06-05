@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-4">
+        <app-query-list *ngFor="let query of queries; let i = index" [query]="query" [index]="i"></app-query-list>
+    </div>
+    <div class="col-md-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>
